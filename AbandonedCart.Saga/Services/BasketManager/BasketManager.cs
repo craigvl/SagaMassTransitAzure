@@ -20,7 +20,6 @@ using Quartz;
 using Quartz.Impl;
 using MassTransit;
 using MassTransit.Monitoring.Introspection;
-using MassTransit.QuartzIntegration;
 using Quartz.Util;
 
 
