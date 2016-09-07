@@ -32,8 +32,6 @@ namespace Abt.Result.WebApi.Services.BasketManager
        // private readonly NamespaceManager _namespaceClient;
      //   private readonly IBasketStore _basketStore;
         private  IBusControl _bus;
-        private readonly string ServiceNamespace;
-
         private QueueClient _queueClient;
         private QueueDescription _basketEventsQueue;
         private TopicDescription _topic;
@@ -52,7 +50,6 @@ namespace Abt.Result.WebApi.Services.BasketManager
             _scheduler = CreateScheduler();
             _dbConnectionString = cs;
             //    _basketStore = basketStore;
-            ServiceNamespace = serviceNamespace;
             _credentials = TokenProvider.CreateSharedAccessSignatureTokenProvider(sasKeyName, sasKeyValue);
            // _namespaceClient = new NamespaceManager(ServiceBusEnvironment.CreateServiceUri("sb", ServiceNamespace, string.Empty), _credentials);
 
