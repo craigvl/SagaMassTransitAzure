@@ -24,8 +24,8 @@ More on MT Messages :
 {
   "messageId": "34c00000-f14b-f0de-5d0e-08d3d78aa22a",
   "conversationId": "34c00000-f14b-f0de-64a0-08d3d78aa22a",
-  "sourceAddress": "sb://dominosbasket.servicebus.windows.net/THIERRYRAIS_BasketMassTransitvshost_bus_guyyyy8tjxap7im9bdj7xnx3bi?express=true&autodelete=300",
-  "destinationAddress": "sb://dominosbasket.servicebus.windows.net/Abt.Result.WebApi.Saga/IOrderStartedEvent",
+  "sourceAddress": "sb://<root>.servicebus.windows.net/<sub>?express=true&autodelete=300",
+  "destinationAddress": "sb://<root>.servicebus.windows.net/<sub>/Result.WebApi.Saga/IOrderStartedEvent",
   "messageType": [
     "urn:message:Abt.Result.WebApi.Saga:IOrderStartedEvent"
   ],
@@ -35,7 +35,7 @@ More on MT Messages :
   },
   "headers": {},
   "host": {
-    "machineName": "THIERRYRAIS",
+    "machineName": "<>",
     "processName": "Basket.MassTransit.vshost",
     "processId": 34736,
     "assembly": "Basket.MassTransit",
